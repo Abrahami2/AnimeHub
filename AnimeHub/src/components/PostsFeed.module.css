@@ -1,0 +1,95 @@
+/* src/components/PostPage.module.css */
+.PostContainer a{
+  text-decoration: none; /* Remove underline */
+  color: inherit; /* Inherit text color from parent */
+  cursor: auto; /* Remove any cursor styles */
+  pointer-events: auto; /* Restore pointer events */
+}
+
+.PostContainer:hover{
+  background-color: #223a65;
+  border-radius: 2px;
+}
+.postItem {
+    background: #ffffffd0;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    
+  }
+  
+  .postTitle {
+    margin-bottom: 10px;
+    color: #333;
+    font-size: 1.4rem;
+  }
+
+  
+  .sortControls {
+    text-align: right;
+    margin-bottom: 20px;
+  }
+  
+  .sortButton {
+    padding: 5px 10px;
+    margin-left: 5px;
+    background: #ddd;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .sortButton:hover {
+    color: white;
+    background: #0eafc1;
+  }
+
+  /* div containing delete edit and upvote */
+  .edButtonsUpvote{
+    display: flex;
+    justify-content: space-between;
+  }
+  /* Delete and Edit buttons */
+.buttonsContainer {
+  text-align: right;
+}
+.buttonsContainer button {
+  background: none; /* Remove default button styles */
+  border: none;
+  padding: 5px;
+  cursor: pointer; /* Indicate clickable behavior */
+  color: #223a65;; /* Set color for the icon */
+}
+
+.buttonsContainer button:hover{
+  color: #0eafc1;
+}
+.commentsContainer{
+  background-color: #e0e0e0;
+  padding: 2px 10px 2px 10px;
+  border: 1px solid cornsilk;
+  border-radius: 10px;
+}
+.commentsContainer :last-child{
+  border-bottom: none;
+}
+.comment{
+  border-bottom: 1px solid #00000026;
+}
+
+  /* PostsFeed.module.css */
+  @media (max-width: 768px) {
+    .container {
+      width: 90%;
+      padding: 0;
+    }
+  
+    .postItem,
+    .form {
+      padding: 10px;
+    }
+  
+    .postTitle {
+      font-size: 1.2rem;
+    }
+  }  
