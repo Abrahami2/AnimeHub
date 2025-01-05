@@ -20,7 +20,7 @@ https://animehubpost.netlify.app/
 src/Animegiff.gif
 Here's a walkthrough of implemented user stories: 
 
-![Anime GIF]
+![Anime GIF](src/Animegiff.gif)
 
 
 
